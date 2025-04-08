@@ -8,6 +8,9 @@
     text-decoration: none;
     font-weight: bold;
   }
+  .container {
+max-width: 100%;
+  }
   
   
   
