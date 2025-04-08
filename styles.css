@@ -1,0 +1,73 @@
+body {
+    background-color: #f9f9f9;
+  }
+  
+  .top-menu {
+    background-color: #222;
+    padding: 10px;
+  }
+  
+  .top-menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .service, .comment {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+  }
+  
+  .service {
+    background-color: white;
+  }
+  
+  .comment {
+    background-color: #f1f1f1;
+  }
+  
+  .live-block {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+  
+  .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Додаємо правило для контейнера */
+  .container {
+    max-width: 100% !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Стилі для карток */
+  .card {
+    margin-bottom: 15px;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  /* Стилі для зображень */
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  

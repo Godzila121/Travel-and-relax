@@ -1,87 +1,113 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Подорожі та мандрівки</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> 
+  <meta charset="UTF-8">
+  <title>SEOnews</title>
+  <!-- Підключення Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Підключення власного CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
- 
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Відкрийте світ з нами!</h1>
-        <p>Найкращі подорожі та незабутні враження</p>
-        <a href="#contact" class="btn btn-light btn-lg">Зв'язатися з нами</a>
-    </header>
+<!-- Шапка меню -->
+<div class="top-menu text-center">
+  <a href="#">Головна</a>
+  <a href="#">Статті</a>
+  <a href="#">Зв'язатися з нами</a>
+  <a href="#">Про нас</a>
+</div>
 
-  
-    <section class="container my-5">
-        <h2>Про нас</h2>
-        <p>Ми пропонуємо унікальні подорожі по всьому світу. Наша команда професіоналів допоможе вам знайти ідеальний тур.</p>
-    </section>
-
-    
-    <section class="container my-5">
+<!-- Контейнер -->
+<div class="container mt-4">
+  <div class="row">
+    <!-- Ліва колонка -->
+    <div class="col-md-8">
+      <div class="service">
         <h2>Наші послуги</h2>
+        
+        <!-- Блок екскурсій -->
         <div class="row">
-            <div class="col-md-4">
-                <h3>Екскурсії</h3>
-                <p>Насолоджуйтесь захоплюючими екскурсіями в найкрасивіші місця.</p>
+          <div class="col-md-6">
+            <h3>Екскурсії</h3>
+            <div class="card">
+              <img src="OSK.jfif" class="card-img-top" alt="Екскурсія по Україні">
+              <div class="card-body">
+                <h5 class="card-title">Екскурсія по Україні</h5>
+                <p class="card-text">Досліджуйте історію та культуру України через захоплюючі екскурсії.</p>
+                <button class="btn btn-primary">Обрати</button>
+              </div>
             </div>
-            <div class="col-md-4">
-                <h3>Тури</h3>
-                <p>Виберіть з безлічі турів, які ми пропонуємо.</p>
+          </div>
+          <div class="col-md-6">
+            <h3>Екскурсії за кордоном</h3>
+            <div class="card">
+              <img src="OI.jfif" class="card-img-top" alt="Екскурсія по Європі">
+              <div class="card-body">
+                <h5 class="card-title">Екскурсія по Європі</h5>
+                <p class="card-text">Захоплюючі подорожі до культурних столиць Європи.</p>
+                <button class="btn btn-primary">Обрати</button>
+              </div>
             </div>
-            <div class="col-md-4">
-                <h3>Бронювання</h3>
-                <p>Легко бронюйте готелі та транспорт з нами.</p>
-            </div>
+          </div>
         </div>
-    </section>
 
-    
-    <section class="container my-5">
-        <h2>Галерея</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="image1.jpg" class="img-fluid" alt="Подорож 1">
+        <!-- Блок турів -->
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <h3>Тури по Україні</h3>
+            <div class="card">
+              <img src="OSK (2).jfif" class="card-img-top" alt="Тур по Карпатах">
+              <div class="card-body">
+                <h5 class="card-title">Тур по Карпатах</h5>
+                <p class="card-text">Насолоджуйтесь красою гірських пейзажів Карпат.</p>
+                <button class="btn btn-primary">Обрати</button>
+              </div>
             </div>
-            <div class="col-md-4">
-                <img src="image2.jpg" class="img-fluid" alt="Подорож 2">
+          </div>
+          <div class="col-md-6">
+            <h3>Тури по Європі</h3>
+            <div class="card">
+              <img src="OS.jfif" class="card-img-top" alt="Тур по Італії">
+              <div class="card-body">
+                <h5 class="card-title">Тур по Італії</h5>
+                <p class="card-text">Знайомтесь з історією та культурою Італії.</p>
+                <button class="btn btn-primary">Обрати</button>
+              </div>
             </div>
-            <div class="col-md-4">
-                <img src="image3.jpg" class="img-fluid" alt="Подорож 3">
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
 
-    
-    <section class="container my-5">
-        <h2>Відгуки</h2>
-        <blockquote class="blockquote">
-            <p class="mb-0">Найкраща подорож, яку я коли-небудь мав!</p>
-            <footer class="blockquote-footer">Іван, <cite title="Source Title">Клієнт</cite></footer>
-        </blockquote>
-    </section>
+    <!-- Права колонка -->
+    <div class="col-md-4">
+      <div class="comment">
+        <h4>Відгуки</h4>
+        <div class="live-block">
+          <div class="name">Дебчук Петро</div>
+          <small>42 хвилини назад</small>
+          <p>Чудовий відпочинок завдяки вам!</p>
+        </div>
+        <div class="live-block">
+          <div class="name">Анна Холодець</div>
+          <small>22 хвилини назад</small>
+          <p>Дуже круте обслуговування!</p>
+        </div>
+        <div class="live-block">
+          <div class="name">Яна Вірна</div>
+          <small>5 хвилин назад</small>
+          <p>Витрачені кошти були оправдані!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  
-    <section id="contact" class="container my-5">
-        <h2>Зв'язатися з нами</h2>
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="name">Ім'я</label>
-                <input type="text" class="form-control" id="name" placeholder="Ваше ім'я">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Ваш email">
-            </div>
-            <button type="submit" class="btn btn-primary">Відправити</button>
-        </form>
-    </section>
+<!-- Підключення Bootstrap JS та залежностей -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    
-    <footer class="text-center py-4">
-        <p>&copy; 2023 Подорожі та м
+</body>
+</html>
