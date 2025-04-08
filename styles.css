@@ -71,3 +71,15 @@ body {
     object-fit: cover;
   }
   
+
+  .cart {
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  #checkout-btn{
+    margin-left: 120px;
+  }
+  

@@ -13,7 +13,6 @@
 <!-- Шапка меню -->
 <div class="top-menu text-center">
   <a href="#">Головна</a>
-  <a href="#">Статті</a>
   <a href="#">Зв'язатися з нами</a>
   <a href="#">Про нас</a>
 </div>
@@ -35,7 +34,8 @@
               <div class="card-body">
                 <h5 class="card-title">Екскурсія по Україні</h5>
                 <p class="card-text">Досліджуйте історію та культуру України через захоплюючі екскурсії.</p>
-                <button class="btn btn-primary">Обрати</button>
+                <button class="btn btn-primary" onclick="addToCart('Екскурсія по Україні')">Обрати</button>
+
               </div>
             </div>
           </div>
@@ -46,7 +46,8 @@
               <div class="card-body">
                 <h5 class="card-title">Екскурсія по Європі</h5>
                 <p class="card-text">Захоплюючі подорожі до культурних столиць Європи.</p>
-                <button class="btn btn-primary">Обрати</button>
+                <button class="btn btn-primary" onclick="addToCart('Екскурсія по Європі')">Обрати</button>
+
               </div>
             </div>
           </div>
@@ -61,7 +62,7 @@
               <div class="card-body">
                 <h5 class="card-title">Тур по Карпатах</h5>
                 <p class="card-text">Насолоджуйтесь красою гірських пейзажів Карпат.</p>
-                <button class="btn btn-primary">Обрати</button>
+                <button class="btn btn-primary" onclick="addToCart('Назва туру/екскурсії')">Обрати</button>
               </div>
             </div>
           </div>
@@ -72,7 +73,7 @@
               <div class="card-body">
                 <h5 class="card-title">Тур по Італії</h5>
                 <p class="card-text">Знайомтесь з історією та культурою Італії.</p>
-                <button class="btn btn-primary">Обрати</button>
+                <button class="btn btn-primary" onclick="addToCart('Назва туру/екскурсії')">Обрати</button>
               </div>
             </div>
           </div>
@@ -99,6 +100,18 @@
           <small>5 хвилин назад</small>
           <p>Витрачені кошти були оправдані!</p>
         </div>
+        <div class="live-block">
+            <div class="name">Jon Versache</div>
+            <small>19 хвилин назад</small>
+            <p>I recommend to others</p>
+          </div>
+      </div>
+      <div class="cart">
+        <h4>🧺 Ваш кошик</h4>
+        <ul id="cart-items" class="list-group mb-2"></ul>
+        <button class="btn btn-danger btn-sm" onclick="clearCart()">Очистити кошик</button>
+        <button id="checkout-btn" class="btn btn-success " onclick="checkout()">Оформити замовлення</button>
+
       </div>
     </div>
   </div>
@@ -108,6 +121,8 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
