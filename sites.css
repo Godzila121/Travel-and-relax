@@ -1,0 +1,23 @@
+.top-menu {
+    background-color: #222;
+    padding: 10px;
+  }
+  .top-menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+.animated-card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.6s ease-in-out forwards;
+  }
+  
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
