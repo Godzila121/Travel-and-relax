@@ -3,42 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <title>SEOnews</title>
-  <!-- Підключення Bootstrap -->
+ 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Підключення власного CSS -->
+
   <link rel="stylesheet" href="stylecss.css">
 </head>
 <body>
 
-<!-- Шапка меню -->
+
 <div class="top-menu text-center">
   <a href="index.html">Головна</a>
   <a href="indexform.html">Зв'язатися з нами</a>
   <a href="information.html">Про Подорожі</a>
 </div>
 
-<!-- Центрований контейнер -->
+
 <div class="container d-flex justify-content-center align-items-center vh-100 bg-dark text-white">
-  <div class="col-md-6">
+  <div class="col-md-8 col-lg-6" >
     <section id="contact" class="bg-black p-5 rounded shadow">
       <h2 class="text-center mb-4">Зв'язатися з нами</h2>
       <form id="contactForm">
-        <div class="form-group">
-          <label for="name">Ім'я</label>
-          <input type="text" class="form-control" id="name" placeholder="Ваше ім'я">
+
+        <div class="row mb-3">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <input type="text" class="form-control" id="name" placeholder="Ваше ім'я">
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" id="email" placeholder="Ваш email">
+          </div>
         </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Ваш email">
+
+        <div class="form-group mb-3">
+          <input type="text" class="form-control" id="subject" placeholder="Тема">
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Відправити</button>
+
+        <div class="form-group mb-4">
+          <textarea class="form-control" id="message" rows="4" placeholder="Повідомлення"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block w-100">Відправити</button>
       </form>
     </section>
   </div>
 </div>
 
 
-<!-- Підключення Bootstrap JS + jQuery -->
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -48,14 +59,12 @@
   <div class="container text-md-left">
     <div class="row">
 
-      <!-- Контакти -->
       <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mb-4">
         <h5 class="text-uppercase fw-bold mb-4">Контакти</h5>
         <p>Email: info@travel.com</p>
         <p>Телефон: +380 44 123 4567</p>
       </div>
 
-      <!-- Про нас -->
       <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mb-md-0 mb-4">
         <h5 class="text-uppercase fw-bold mb-4">Про нас</h5>
         <p>Онлайн Магазин Петрович – ваш надійний довідник для подорожей.</p>

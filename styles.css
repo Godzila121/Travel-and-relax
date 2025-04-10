@@ -39,14 +39,12 @@ body {
     margin-bottom: 5px;
   }
   
-  /* Додаємо правило для контейнера */
   .container {
     max-width: 100% !important;
     padding-left: 15px;
     padding-right: 15px;
   }
   
-  /* Стилі для карток */
   .card {
     margin-bottom: 15px;
   }
@@ -65,7 +63,6 @@ body {
     color: #555;
   }
   
-  /* Стилі для зображень */
   .card-img-top {
     height: 200px;
     object-fit: cover;
